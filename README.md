@@ -1,5 +1,6 @@
 # MySite-Bootstrap5 05/05/2025
 
+- The website repository is private due to API Keys.
 ---
 
 **Live Site**:-[here](https://matthews-world.netlify.app/)
@@ -40,7 +41,7 @@ Photoshop:-
 
 **Animate/Transitions for Owl-Carousel**:
 By default the Animate is disabled, to enable do the following. The instructions coincide with index.html file for reference.
-- 1. In the html file comment out line: 122 and uncomment line: 123.
+- 1. In the html file comment out line: 127 and uncomment line: 128.
 - 2. Line 127 change <img src= to <img data-src= and add owl-lazy to class="card-img-top". 
     (Do this with all that follow, Lines: 133,139,145,151 & 157).
 - 3. Line 375 change owl.carousel.slider.js to owl.carousel.slider-with-animate.js.

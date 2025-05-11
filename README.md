@@ -17,7 +17,7 @@ AI images generated using :-
 
 Image editors :-
 
-- Toolwiz for cropping and rezising.
+- Toolwiz for cropping and resizing.
 - Quoosh for reducing file size.
 
 Mobile phone used for:-

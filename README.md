@@ -13,7 +13,12 @@ AI images generated using :-
 
 - Microsoft Designer App.
 - Leonardo.ai App.
-- ChatGPT app
+- ChatGPT app.
+
+Image editors :-
+
+- Toolwiz for cropping and rezising.
+- Quoosh for reducing file size.
 
 Mobile phone used for:-
 

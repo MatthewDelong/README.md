@@ -42,9 +42,9 @@ Photoshop:-
 **Animate/Transitions for Owl-Carousel**:
 By default the Animate is disabled, to enable do the following. The instructions coincide with index.html file for reference.
 - 1. In the html file comment out line: 127 and uncomment line: 128.
-- 2. Line 127 change <img src= to <img data-src= and add owl-lazy to class="card-img-top". 
-    (Do this with all that follow, Lines: 133,139,145,151 & 157).
-- 3. Line 375 change owl.carousel.slider.js to owl.carousel.slider-with-animate.js.
+- 2. Line 132 change <img src= to <img data-src= and add owl-lazy to class="card-img-top". 
+    (Do this with all that follow, Lines: 138,144,150,156 & 162).
+- 3. Line 430 change owl.carousel.slider.js to owl.carousel.slider-with-animate.js.
 
 This can be applied to index.html, news.html and coding.html but line numbers will change in all files.
 

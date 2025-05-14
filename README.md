@@ -19,6 +19,7 @@ Image editors :-
 
 - Toolwiz for cropping and resizing.
 - Quoosh for reducing file size.
+- remove.bg for removing background 
 
 Mobile phone used for:-
 

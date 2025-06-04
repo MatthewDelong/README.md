@@ -1,4 +1,4 @@
-# MySite-Bootstrap5 11/05/2025
+# MySite-Bootstrap5 04/06/2025
 
 - The website repository is private due to API Keys.
 ---
@@ -13,13 +13,13 @@ AI images generated using :-
 
 - Microsoft Designer App.
 - Leonardo.ai App.
-- ChatGPT app.
-
+- ChatGPT app
+- 
 Image editors :-
 
-- Toolwiz for cropping and resizing.
-- Quoosh for reducing file size.
-- remove.bg for removing backgrounds. 
+- Toolwiz for cropping and resizing (app).
+- Quoosh for reducing file size [Here](https://squoosh.app/).
+- Remove.bg to remove backgrounds for transparents .png (app)
 
 Mobile phone used for:-
 

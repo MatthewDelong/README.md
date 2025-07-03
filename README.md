@@ -46,9 +46,9 @@ Photoshop:-
 
 ![screencapture-matthews-world-netlify-app-2025-06-04-13_18_45](https://github.com/user-attachments/assets/c00fec9a-e2e1-4743-b752-dc1fbe91b45a)
 
-![screencapture-matthews-world-netlify-app-navbar-gallery-2025-06-04-13_22_35](https://github.com/user-attachments/assets/928a7caf-7838-4331-b479-b7064d764cd1)
+![screencapture-matthews-world-netlify-app-navbar-gallery-2025-07-02-19_03_13](https://github.com/user-attachments/assets/61564428-2b2d-41c6-a649-571d8e6124e8)
 
-![screencapture-matthews-world-netlify-app-navbar-weather-2025-06-04-13_24_54](https://github.com/user-attachments/assets/07507f8a-b499-4ba0-b0ca-fa3fe030ae3d)
+![screencapture-matthews-world-netlify-app-navbar-weather-2025-07-03-12_10_48](https://github.com/user-attachments/assets/72391c59-11d8-4500-803a-ec0741d92aaf)
 
 ---
 

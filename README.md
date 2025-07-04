@@ -53,7 +53,7 @@ Photoshop:-
 
 ![screencapture-matthews-world-netlify-app-navbar-gallery-2025-07-02-19_03_13](https://github.com/user-attachments/assets/61564428-2b2d-41c6-a649-571d8e6124e8)
 
-![screencapture-matthews-world-netlify-app-navbar-weather-2025-07-03-20_06_32](https://github.com/user-attachments/assets/fd494b59-5c3d-416b-8a89-77be93a74212)
+![screencapture-127-0-0-1-5500-navbar-weather-html-2025-07-04-18_14_46 (1)](https://github.com/user-attachments/assets/d9687673-6b57-4b15-a59a-ae647711d192)
 
 ---
 

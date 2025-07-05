@@ -19,7 +19,7 @@ AI images generated using :-
 - Microsoft Designer App.
 - Leonardo.ai App.
 - ChatGPT app
-- 
+
 Image editors :-
 
 - Toolwiz for cropping and resizing (app).
@@ -32,6 +32,10 @@ Mobile phone used for:-
 - Sketch to Image.
 - Portrait Studio.
 - Gifs
+
+---
+
+F1 is a trademark logo but was generated using Leonardo.ai.
 
 ---
 

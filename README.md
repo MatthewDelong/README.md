@@ -1,4 +1,4 @@
-# MySite-Bootstrap5 03/07/2025
+# MySite-Bootstrap5 06/07/2025
 
 
 - The website repository is private due to API Keys.
@@ -57,7 +57,8 @@ Photoshop:-
 
 ![screencapture-matthews-world-netlify-app-navbar-gallery-2025-07-02-19_03_13](https://github.com/user-attachments/assets/61564428-2b2d-41c6-a649-571d8e6124e8)
 
-![screencapture-127-0-0-1-5500-navbar-weather-html-2025-07-04-18_14_46 (1)](https://github.com/user-attachments/assets/d9687673-6b57-4b15-a59a-ae647711d192)
+![screencapture-matthews-world-netlify-app-navbar-weather-2025-07-06-20_26_31](https://github.com/user-attachments/assets/ee9e0fde-962e-47c2-b111-d20d8c20a798)
+
 
 ---
 

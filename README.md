@@ -1,7 +1,7 @@
-# Matthews-World 07/07/2025
+# Matthews-World 08/07/2025
 
 
-- The website repository is private due to API Keys.
+- Openweather API Keys are not stored in this repository.
 ---
 
 **Live Site**:-[here](https://matthews-world.netlify.app/)

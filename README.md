@@ -1,7 +1,7 @@
 # Matthews-World 08/07/2025
 
 
-- Openweather API Keys are not stored in this repository.
+- Openweather API Keys are not stored in this repository but keeping it private.
 ---
 
 **Live Site**:-[here](https://matthews-world.netlify.app/)
@@ -57,7 +57,7 @@ Photoshop:-
 
 ![screencapture-matthews-world-netlify-app-navbar-gallery-2025-07-02-19_03_13](https://github.com/user-attachments/assets/61564428-2b2d-41c6-a649-571d8e6124e8)
 
-![screencapture-matthews-world-netlify-app-navbar-weather-2025-07-08-20_25_54](https://github.com/user-attachments/assets/1c9e656e-a2ec-44be-8245-15f6f517314c)
+![Screenshot_9-7-2025_204250_matthews-world netlify app](https://github.com/user-attachments/assets/a60621ea-94f4-46d4-90bd-cf45c0c5cc8a)
 
 
 ---

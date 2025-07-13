@@ -1,7 +1,7 @@
 # Matthews-World 11/07/2025
 
 
-- Openweather API Keys are not stored in this repository but keeping it private.
+- Openweather API Keys are not stored on Github but keeping the repositiory private.
 ---
 
 **Live Site**:-[here](https://matthews-world.netlify.app/)

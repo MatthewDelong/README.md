@@ -1,4 +1,4 @@
-# Matthews-World 08/07/2025
+# Matthews-World 01/07/2025
 
 
 - Openweather API Keys are not stored in this repository but keeping it private.
@@ -25,6 +25,7 @@ Image editors :-
 - Toolwiz for cropping and resizing (app).
 - Quoosh for reducing file size [Here](https://squoosh.app/).
 - Remove.bg to remove backgrounds for transparents .png (app)
+- sharp axios used fir weather background optimisation, cropping & resize.
 
 Mobile phone used for:-
 

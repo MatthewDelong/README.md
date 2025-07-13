@@ -25,7 +25,7 @@ Image editors :-
 - Toolwiz for cropping and resizing (app).
 - Quoosh for reducing file size [Here](https://squoosh.app/).
 - Remove.bg to remove backgrounds for transparents .png (app)
-- sharp axios used fir weather background optimisation, cropping & resize.
+- sharp axios used for weather background optimisation, cropping & resize.
 
 Mobile phone used for:-
 

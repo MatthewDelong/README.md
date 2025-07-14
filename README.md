@@ -1,4 +1,4 @@
-# Matthews-World 11/07/2025
+# Matthews-World 14/07/2025
 
 
 - Openweather API Keys are not stored on Github but keeping the repositiory private.
@@ -54,12 +54,11 @@ Photoshop:-
 
 **PC Browser** 
 
-![screencapture-matthews-world-netlify-app-2025-06-04-13_18_45](https://github.com/user-attachments/assets/c00fec9a-e2e1-4743-b752-dc1fbe91b45a)
+![Home](https://github.com/user-attachments/assets/6c446300-b22d-4e2a-92f5-d26b6aa9a6bf)
 
-![screencapture-matthews-world-netlify-app-navbar-gallery-2025-07-02-19_03_13](https://github.com/user-attachments/assets/61564428-2b2d-41c6-a649-571d8e6124e8)
+![Gallery](https://github.com/user-attachments/assets/d2617f50-6c0a-43a3-9f40-d2d17a5ff7b7)
 
-![Screenshot_12-7-2025_195310_matthews-world netlify app](https://github.com/user-attachments/assets/2522f292-2e13-49e3-8a15-d4da5e57a4e4)
-
+![Weather](https://github.com/user-attachments/assets/ce8462c9-c7e9-4cc0-b299-5f44919e6382)
 
 ---
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)

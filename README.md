@@ -1,5 +1,21 @@
 # Matthews-World 14/07/2025
 
+## Credits
+
+This project uses the following resources and technologies:
+
+- [Bootstrap 5 & Icons](https://getbootstrap.com/) - Frontend framework
+- [Font Awesome](https://fontawesome.com/) - Icon library
+- [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/) - Carousel/slider plugin
+- [Country Flags](https://flagpedia.net/) - Country flag images
+- [OpenWeather API](https://openweathermap.org/) - Weather data
+- [Amcharts Weather Icons](https://www.amcharts.com/free-animated-svg-weather-icons/) - Animated weather icons
+
+## Development
+
+- Developed by Matthew Delong
+
+---
 
 - Openweather API Keys are not stored on Github but keeping the repositiory private.
 ---

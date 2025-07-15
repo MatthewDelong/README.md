@@ -54,7 +54,7 @@ All images/photos and logos are either:
 
 ## Additional Notes  
 - **Flags**: Sourced from [Flagpedia](https://flagpedia.net/)  
-- **Photoshop**: Used for Green Flag creating)editing  
+- **Photoshop**: Used for Green Flag creating/editing  
 ---
 
 ## 🖥 Screenshots  

@@ -22,8 +22,6 @@ This project uses the following resources and technologies:
 
 **Live Site**:-[here](https://matthews-world.netlify.app/)
 
-**Amcharts weather icons site**:- [Here](https://www.amcharts.com/free-animated-svg-weather-icons/)
-
 ---
 
 All images/photos and logos are either AI generated or taken by myself (Matthew Delong).

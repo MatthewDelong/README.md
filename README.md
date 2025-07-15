@@ -1,79 +1,81 @@
-# Matthews-World 14/07/2025
+# 🌎 Matthews-World  
+**Last Updated**: July 14, 2025  
 
-## Credits
-
-This project uses the following resources and technologies:
-
-- [Bootstrap 5 & Icons](https://getbootstrap.com/) - Frontend framework
-- [Font Awesome](https://fontawesome.com/) - Icon library
-- [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/) - Carousel/slider plugin
-- [Country Flags](https://flagpedia.net/) - Country flag images
-- [OpenWeather API](https://openweathermap.org/) - Weather data
-- [Amcharts Weather Icons](https://www.amcharts.com/free-animated-svg-weather-icons/) - Animated weather icons
-
-## Development
-
-- Developed by Matthew Delong
+A dynamic web application featuring weather data, interactive galleries, and responsive carousels. Built with modern frontend technologies.  
 
 ---
 
-- Openweather API Keys are not stored on Github but keeping the repositiory private.
----
+## 🛠 Technologies & Credits  
 
-**Live Site**:-[here](https://matthews-world.netlify.app/)
+### Core Technologies  
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap) - Frontend framework  
+- ![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?logo=fontawesome) - Icon library  
+- [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) - Responsive content slider  
 
----
-
-All images/photos and logos are either AI generated or taken by myself (Matthew Delong).
-
-AI images generated using :-
-
-- Microsoft Designer App.
-- Leonardo.ai App.
-- ChatGPT app
-
-Image editors :-
-
-- Toolwiz for cropping and resizing (app).
-- Quoosh for reducing file size [Here](https://squoosh.app/).
-- Remove.bg to remove backgrounds for transparents .png (app)
-- sharp axios used for weather background optimisation, cropping & resize.
-
-Mobile phone used for:-
-
-- Photos.
-- Sketch to Image.
-- Portrait Studio.
-- Gifs
+### Data & Assets  
+- [OpenWeather API](https://openweathermap.org/) - Weather data  
+- [Amcharts Weather Icons](https://www.amcharts.com/free-animated-svg-weather-icons/) - Animated weather icons  
+- [Flagpedia](https://flagpedia.net/) - Country flag SVGs  
 
 ---
 
-F1 is a trademark logo but was generated using Leonardo.ai.
+## 🚀 Deployment  
+**Live Site**: [matthews-world.netlify.app](https://matthews-world.netlify.app/)  
+
+> 🔒 OpenWeather API Keys are not stored on GitHub (repository kept private)
 
 ---
 
-Flags:-
+## 📸 Asset Attribution  
 
-- https://flagpedia.net/
+### 📸 Image Sources  
+All images/photos and logos are either:  
+- **Original Content**: Taken by myself (Matthew Delong)  
+- **AI-Generated**:  
+  - Microsoft Designer App  
+  - Leonardo.ai App  
+  - ChatGPT app  
+
+### Editing Tools  
+- **Cropping/Resizing**: Toolwiz (app)  
+- **Compression**: [Quoosh](https://squoosh.app/)  
+- **Background Removal**: Remove.bg (app)  
+- **Optimization**: sharp axios (weather background optimization, cropping & resize)  
+
+### Mobile Usage  
+- Photos  
+- Sketch to Image  
+- Portrait Studio  
+- GIFs  
+
+> ⚠️ F1 is a trademark logo but mine was generated using Leonardo.ai  
 
 ---
 
-Photoshop:-
+## Additional Notes  
+- **Flags**: Sourced from [Flagpedia](https://flagpedia.net/)  
+- **Photoshop**: Used for Green Flag editing  
+---
 
-- Green Flag.
+## 🖥 Screenshots  
+
+| Page      | Preview |
+|-----------|---------|
+| Home      | ![Home](https://github.com/user-attachments/assets/a0653d25-a344-4e83-8ee1-ed402f000fbe) |
+| Gallery   | ![Gallery](https://github.com/user-attachments/assets/e06eeb69-0d8d-4f12-b13b-3f4f6a77afb1) |
+| Weather   | ![Weather](https://github.com/user-attachments/assets/bd73e95a-5a72-4b5e-b361-d3b7e509ea9a) |
 
 ---
 
-**PC Browser** 
+## 💻 Tech Stack  
 
-![Home](https://github.com/user-attachments/assets/6c446300-b22d-4e2a-92f5-d26b6aa9a6bf)
-
-![Gallery](https://github.com/user-attachments/assets/d2617f50-6c0a-43a3-9f40-d2d17a5ff7b7)
-
-![Weather](https://github.com/user-attachments/assets/ce8462c9-c7e9-4cc0-b299-5f44919e6382)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)  
 
 ---
-![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![image](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+## 👨‍💻 Developer  
+**Matthew Delong**  
+[GitHub Profile](https://github.com/MatthewDelong)

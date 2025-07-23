@@ -14,6 +14,7 @@ A dynamic web application featuring weather data, interactive galleries, and res
 
 ### Data & Assets  
 - [OpenWeather API](https://openweathermap.org/) - Weather data  
+- [SunCalc](https://cdn.jsdelivr.net/npm/suncalc@1.8.0/suncalc.min.js) - Sun and Moon data
 - [Amcharts Weather Icons](https://www.amcharts.com/free-animated-svg-weather-icons/) - Animated weather icons  
 - [Flagpedia](https://flagpedia.net/) - Country flag SVGs  
 

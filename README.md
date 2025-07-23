@@ -1,5 +1,5 @@
 # 🌎 Matthews-World  
-**Last Updated**: July 14, 2025  
+**Last Updated**: July 22, 2025  
 
 A dynamic web application featuring weather data, interactive galleries, and responsive carousels. Built with modern frontend technologies.  
 
@@ -64,7 +64,7 @@ All images/photos and logos are either:
 |-----------|---------|
 | Home      | ![Home](https://github.com/user-attachments/assets/6c446300-b22d-4e2a-92f5-d26b6aa9a6bf) |
 | Gallery   | ![Gallery](https://github.com/user-attachments/assets/d2617f50-6c0a-43a3-9f40-d2d17a5ff7b7) |
-| Weather   | ![Weather](https://github.com/user-attachments/assets/ce8462c9-c7e9-4cc0-b299-5f44919e6382) |
+| Weather   | ![Weather](https://github.com/user-attachments/assets/7bc420a1-1218-44bd-9fcc-077ff554f266) |
 
 ---
 

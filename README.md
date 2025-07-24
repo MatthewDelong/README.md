@@ -78,7 +78,7 @@ All images/photos and logos are either:
 ## My Personal Website  
 
 ## 📜 License  
-- **Code**: [MIT License](https://github.com/MatthewDelong/README.md/blob/main/LICENCE)  
+- **Code**: [MIT License](https://github.com/MatthewDelong/README.md/blob/main/LICENSE)  
 - **Content**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
 
 ---

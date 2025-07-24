@@ -6,7 +6,7 @@ A dynamic web application featuring weather data, interactive galleries, and res
 ---
 
 ## 🛠 Technologies & Credits  
-
+<a id="credits"></a> 
 ### Core Technologies  
 - ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap) - Frontend framework  
 - ![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?logo=fontawesome) - Icon library  
@@ -78,8 +78,13 @@ All images/photos and logos are either:
 ## My Personal Website  
 
 ## 📜 License  
-- **Code**: [MIT License](https://github.com/MatthewDelong/README.md/blob/main/LICENSE)  
-- **Content**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
+- **Code (MIT License)**:  
+  - Covers all original source code (HTML, CSS, JavaScript)  
+  - [View MIT License](LICENSE)  
+- **Content (CC BY 4.0)**:  
+  - Applies to original text, graphics, and media created for Matthews-World  
+  - [View Creative Commons License](https://creativecommons.org/licenses/by/4.0/)  
+- **Third-party assets**: Licensed under their respective terms (see [Credits](#credits))
 
 ---
 

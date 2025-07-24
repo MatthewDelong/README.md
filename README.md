@@ -77,9 +77,9 @@ All images/photos and logos are either:
 
 ## My Personal Website  
 
-[![CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)  
-
-All original text, graphics, and media are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).  
+## 📜 License  
+- **Code**: [MIT License](https://github.com/MatthewDelong/README.md/blob/main/LICENCE)  
+- **Content**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
 
 ---
 

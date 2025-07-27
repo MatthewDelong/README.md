@@ -64,7 +64,7 @@ All images/photos and logos are either:
 |-----------|---------|
 | Home      | ![Home](https://github.com/user-attachments/assets/6c446300-b22d-4e2a-92f5-d26b6aa9a6bf) |
 | Gallery   | ![Gallery](https://github.com/user-attachments/assets/d2617f50-6c0a-43a3-9f40-d2d17a5ff7b7) |
-| Weather   | ![Weather]![Screenshot_27-7-2025_111526_localhost](https://github.com/user-attachments/assets/beeafa78-ca0a-4f8c-b81c-17390c40365c) |
+| Weather   | ![Weather](https://github.com/user-attachments/assets/beeafa78-ca0a-4f8c-b81c-17390c40365c) |
 
 ---
 

@@ -11,7 +11,6 @@ A dynamic web application featuring weather data, interactive galleries, and res
 - ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap) - Frontend framework  
 - ![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?logo=fontawesome) - Icon library  
 - [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) - Responsive content slider  
-- ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white) - Development platform that includes build, deploy, and serverless backend services
 
 ### Data & Assets  
 - [OpenWeather API](https://openweathermap.org/) - Weather data  
@@ -24,7 +23,9 @@ A dynamic web application featuring weather data, interactive galleries, and res
 ## 🚀 Deployment  
 **Live Site**: [matthews-world.netlify.app](https://matthews-world.netlify.app/)  
 
-> 🔒 OpenWeather API Keys are not stored on GitHub (repository kept private)
+> 🔒 OpenWeather API Keys are not stored on GitHub (repository kept private). The API keys are stored on Netlify Environment Variables.
+
+- ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white) - Development platform that includes build, deploy, and serverless backend services
 
 ---
 

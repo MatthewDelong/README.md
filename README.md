@@ -25,7 +25,7 @@ A dynamic web application featuring weather data, interactive galleries, and res
 
 > 🔒 OpenWeather API Keys are not stored on GitHub (repository kept private). The API keys are stored on Netlify Environment Variables.
 
-- [![Netlify Status](https://api.netlify.com/api/v1/badges/ed1676e4-413a-4e50-bb08-44ff956fd7a0/deploy-status)] build, deploy, and serverless backend services
+- ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white) - Development platform that includes build, deploy, and serverless backend services
 
 ---
 

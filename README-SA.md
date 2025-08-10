@@ -55,6 +55,7 @@
 ```
 ├── firebase.json
 ├── .firebaserc
+├── cors.json
 ├── index.html
 ├── package.json
 ├── package-lock.json

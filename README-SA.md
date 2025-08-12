@@ -53,46 +53,57 @@
 
 ## :deciduous_tree: File Tree
 ```
-├── firebase.json
 ├── .firebaserc
-├── cors.json
-├── index.html
-├── package.json
-├── package-lock.json
-├── vite.config.js
-├── tailwind.config.js
-├── postcss.config.js
 ├── .gitignore
-├── README.md
 ├── LICENSE
+├── README.md
+├── firebase.json
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
 ├── public/
-│   ├── favicon.ico
-│   ├── favicon-32x32.png
 │   ├── apple-touch-icon.png
+│   ├── favicon-ico
+│   ├── favicon-32x32.png
 │   └── images/
 │       └── logo.png
 └── src/
-    ├── main.jsx
-    ├── index.css
-    ├── firebase.js
     ├── App.jsx
+    ├── firebase.js
+    ├── index.css
+    ├── main.jsx
+    ├── components/
+    │   ├── Footer.jsx
+    │   ├── Layout.jsx
+    │   ├── MembersList
+    │   ├── Navbar.jsx
+    │   ├── groups/
+    │   │   ├── GroupComments.jsx
+    │   │   ├── GroupNewPost.jsx
+    │   │   └── GroupReplies.jsx
+    │   └── ui/
+    │       ├── button.jsx
+    │       ├── card.jsx
+    │       ├── input.jsx
+    │       └── textarea.jsx
     ├── context/
     │   └── AppContext.jsx
-    ├── components/
-    │   ├── ui/
-    │   │   ├── button.jsx
-    │   │   ├── input.jsx
-    │   │   ├── textarea.jsx
-    │   │   └── card.jsx
-    │   └─ Navbar.jsx
     └── pages/
         ├── AdminDashboard.jsx
-        ├── Login.jsx
-        ├── Signup.jsx
+        ├── CreateGroup.jsx
+        ├── GroupList.jsx
+        ├── GroupPage.jsx
+        ├── GroupPostPage.jsx
         ├── Home.jsx
-        ├── Profile.jsx
+        ├── Login.jsx
         ├── NewPost.jsx
-        └── ProfileSettings.jsx
+        ├── Profile.jsx
+        ├── ProfileSettings.jsx
+        ├── Signup.jsx
+        └── UserProfiles.jsx
   ```
 ---
 

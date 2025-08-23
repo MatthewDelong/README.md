@@ -19,7 +19,8 @@
 - npm install firebase storage
 - npm install emoji-picker-react
 - npx tailwindcss init -p
-- 
+- npm install lucide-react
+
 # Setup for CORS policy (No Errors) Google Cloud SDK
 
 - https://cloud.google.com/sdk/docs/install
@@ -83,7 +84,9 @@
     │   ├── groups/
     │   │   ├── GroupComments.jsx
     │   │   ├── GroupNewPost.jsx
-    │   │   └── GroupReplies.jsx
+    │   │   ├── GroupReplies.jsx
+    │   │   ├── GroupRoleManager.jsx
+    │   │   └── RoleBadge.jsx
     │   └── ui/
     │       ├── button.jsx
     │       ├── card.jsx
@@ -91,6 +94,8 @@
     │       └── textarea.jsx
     ├── context/
     │   └── AppContext.jsx
+    ├── hooks/
+    │   └── useGroupPermissions.jsx
     └── pages/
         ├── AdminDashboard.jsx
         ├── CreateGroup.jsx

@@ -1,4 +1,5 @@
 # :speech_balloon: Social-App
+**Last Updated**: September 04, 2025 
 
 # Requirements
 - Node.js v16+
@@ -12,7 +13,7 @@
 - Replace placeholders in firebase.js and .firebaserc
 
 # Install dependencies
-- npm install react react-dom react-router-dom firebase
+- npm install react react-dom react-router-dom react-icons firebase
 - npm install -D vite @vitejs/plugin-react tailwindcss postcss autoprefixer
 - npm install -g firebase-tools
 - npm install date-fns
@@ -34,6 +35,12 @@
 - npm run build
 - firebase deploy
 
+# Firebase Functions
+- install NVM for Windows https://github.com/coreybutler/nvm-windows
+- nvm install 20.18.0
+- nvm use 20.18.0
+- firebase deploy --only "functions:adminDeleteUser"
+
 ---
 
 ## Run Development Server
@@ -49,7 +56,7 @@
 - ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) - Scripting Language
 - ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-grey?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC) - CSS Framework
 - ![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black) - Backend Services
-- - ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white) - Backend Services
+- ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white) - Backend Services
 
 ---
 
@@ -66,11 +73,20 @@
 ├── postcss.config.js
 ├── tailwind.config.js
 ├── vite.config.js
+├── functions/
+│   ├── .eslint.js
+│   ├── .gcloudignore
+│   ├── .gitignore
+│   ├── functions.yaml
+│   ├── index.js
+│   ├── package-lock.json
+│   └── package.json
 ├── public/
 │   ├── apple-touch-icon.png
 │   ├── favicon-ico
 │   ├── favicon-32x32.png
 │   └── images/
+│       ├── login&signup.png
 │       └── logo.png
 └── src/
     ├── App.jsx
@@ -117,11 +133,11 @@
 
 | Page      | Preview |
 |-----------|---------|
-| Login     | ![Login](https://github.com/user-attachments/assets/4ea1359c-b1a9-4447-94a0-65f51ba063be) |
-| Posts     | ![Posts](https://github.com/user-attachments/assets/57826956-d3c7-474c-8bd4-82123af5e599) |
-| Profile   | ![Profile](https://github.com/user-attachments/assets/00d6174e-2c3a-4d57-afdf-3a7bd5902bc1) |
-
-
+| Login     | ![Login](https://github.com/user-attachments/assets/8d6f1399-c8f9-49e1-8b69-272d8b536c68) |
+| Posts     | ![Posts](https://github.com/user-attachments/assets/52a5534a-0ec8-4bd3-81b2-b3afb4e06b0f) |
+| Profile   | ![Profile](https://github.com/user-attachments/assets/d2d0530f-072f-4bc1-bf1e-f589419dc783) |
+| Admin     | ![Admin](https://github.com/user-attachments/assets/ccd7e211-8c2d-4fdb-ab12-dc5bf816500d) |
+| Group Page| ![Group Page](https://github.com/user-attachments/assets/f00173d1-bfd6-4bc3-ac72-0b778dcec4d0) |
 ---
  
 ## 📜 License  

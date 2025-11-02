@@ -1,0 +1,144 @@
+# Jira-Tracker
+A comprehensive Jira-like issue tracker and project management website using SQLite
+---
+## Backend ##
+
+```
+backend/
+├── server.js                          # Main server file (you already have this)
+├── package.json                       # Backend dependencies
+├── .env                               # Environment variables
+├── models/
+│   ├── User.js                        # User model
+│   ├── Project.js                     # Project model
+│   ├── Issue.js                       # Issue model
+│   ├── Sprint.js                      # Sprint model
+│   └── Workflow.js                    # Workflow model
+├── routes/
+│   ├── auth.js                        # Authentication routes
+│   ├── projects.js                    # Project management routes
+│   ├── issues.js                      # Issue management routes
+│   ├── users.js                       # User management routes
+│   ├── sprints.js                     # Sprint management routes
+│   ├── comments.js                    # Comment routes (❌ Not working)
+│   ├── attachments.js                 # File attachment routes (❌ Not working)
+│   ├── reports.js                     # Reporting routes
+│   ├── workflow.js                    # Workflow routes
+│   └── search.js                      # Search routes (❌ missing - create)
+├── middleware/
+│   ├── auth.js                        # Authentication middleware
+│   ├── upload.js                      # File upload middleware
+│   ├── validation.js                  # Input validation middleware (❌ missing - create)
+│   └── errorHandler.js                # Error handling middleware
+├── config/
+│   ├── database.js                    # Database configuration
+│   └── email.js                       # Email configuration (❌ Not working)
+├── database/
+│   ├── init.js                        # Database initialization
+│   └── jira.db                        # SQLite database file
+├── uploads/
+│   ├── attachments/                   # Store uploaded attachments (❌ missing - create folder)
+│   └── avatars/                       # Store user avatars (❌ missing - create folder)
+└── utils/
+    ├── helpers.js                     # Utility functions
+    └── notifications.js               # Notification utilities (❌ Not working)
+```
+---
+## Frontend ##
+```
+    frontend/
+├── package.json                       # Frontend dependencies
+├── vite.config.js                     # Vite configuration
+├── postcss.config.js  
+├── vtailwind.config.js  
+├── index.html                         # Main HTML file
+├── .env                               # Frontend environment variables
+├── public/
+│   └── vite.svg                       # Logo/favicon (❌ missing)
+└── src/
+    ├── main.jsx                       # React entry point
+    ├── App.jsx                        # Main App component
+    ├── index.css                      # Global styles
+    ├── contexts/
+    │   ├── AuthContext.jsx            # Authentication context
+    │   ├── SocketContext.jsx          # Socket.io context (❌ missing - create)
+    │   ├── ThemeContext.jsx           # Theme context (❌ missing - create)
+    │   └── NotificationContext.jsx    # Notification context (❌ missing - create)
+    ├── components/
+    │   ├── Layout/
+    │   │   ├── Layout.jsx             # Main layout component
+    │   │   ├── Header.jsx             # Page header
+    │   │   ├── Sidebar.jsx            # Navigation sidebar
+    │   │   └── ThemeToggle.jsx        # Dark/light theme toggle (❌ missing - create)
+    │   ├── Auth/
+    │   │   ├── Login.jsx              # Login form
+    │   │   └── Register.jsx           # Registration form
+    │   ├── Dashboard/
+    │   │   └── Dashboard.jsx          # Dashboard component
+    │   ├── Projects/
+    │   │   ├── Projects.jsx           # Projects list
+    │   │   ├── ProjectDetail.jsx      # Project details
+    │   │   ├── ProjectCard.jsx        # Project card component
+    │   │   ├── CreateProject.jsx      # Create project form
+    │   │   └── ProjectMembers.jsx     # Project members management
+    │   ├── Issues/
+    │   │   ├── Issues.jsx             # Issues list
+    │   │   ├── IssueDetail.jsx        # Issue details
+    │   │   ├── IssueCard.jsx          # Issue card component
+    │   │   ├── CreateIssue.jsx        # Create issue form
+    │   │   ├── IssueFilters.jsx       # Issue filtering
+    │   │   └── IssueView.jsx          # Issue view (kanban/list) (❌ missing - create)
+    │   ├── Sprints/
+    │   │   ├── Sprints.jsx            # Sprints list
+    │   │   ├── SprintBoard.jsx        # Sprint board (kanban)
+    │   │   ├── CreateSprint.jsx       # Create sprint form
+    │   │   └── SprintBacklog.jsx      # Sprint backlog (❌ missing - create)
+    │   ├── Workflow/ (❌ missing - create)
+    │   │   ├── WorkflowManagement.jsx # Workflow management
+    │   │   ├── StatusManager.jsx      # Status management
+    │   │   ├── IssueTypeManager.jsx   # Issue type management
+    │   │   ├── WorkflowSchemeManager.jsx # Workflow scheme management
+    │   │   └── TransitionManager.jsx  # Transition management
+    │   ├── Reports/
+    │   │   ├── Reports.jsx            # Reports dashboard
+    │   │   ├── BurndownChart.jsx      # Burndown chart
+    │   │   ├── VelocityChart.jsx      # Velocity chart
+    │   │   └── Analytics.jsx          # Analytics dashboard
+    │   ├── Common/ (❌ missing - create)
+    │   │   ├── Loading.jsx            # Loading spinner
+    │   │   ├── Modal.jsx              # Modal dialog
+    │   │   ├── SearchBar.jsx          # Search component (❌ missing - create)
+    │   │   ├── Button.jsx             # Reusable button
+    │   │   ├── Input.jsx              # Reusable input
+    │   │   └── Select.jsx             # Reusable select
+    │   └── Notifications/
+    │       └── NotificationToast.jsx  # Notification toast (❌ missing - create)
+    ├── hooks/
+    │   ├── useAuth.js                 # Authentication hook (❌ missing - create)
+    │   ├── useSocket.js               # Socket.io hook (❌ missing - create)
+    │   ├── useLocalStorage.js         # Local storage hook
+    │   ├── useApi.js                  # API call hook
+    │   └── useDebounce.js             # Debounce hook
+    ├── services/
+    │   ├── api.js                     # API service functions
+    │   └── socket.js                  # Socket service (❌ missing - create)
+    └── utils/
+        ├── constants.js               # App constants
+        ├── helpers.js                 # Utility functions
+        └── formatters.js              # Data formatting functions (❌ missing - create)
+```
+---
+### Backend: ###
+- cd backend
+- npm install
+- npm run init-db
+- npm run dev
+
+### Frontend: ###
+- cd frontend
+- npm install
+- npm run dev
+
+### Login ###
+- 👤 Admin: admin@jira.com / admin123
+- 👤 User:  user@jira.com / user123

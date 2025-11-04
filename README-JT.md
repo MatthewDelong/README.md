@@ -56,8 +56,8 @@ backend/
 ├── .env                               # Frontend environment variables
 ├── public/
 │   ├── favicon.ico                    # Icon
-│ 	 ├── favicon-32x32.png             # Icon
-│	 └── apple-touch-icon.png          # Icon
+│ 	├── favicon-32x32.png              # Icon
+│	└── apple-touch-icon.png           # Icon
 └── src/
     ├── main.jsx                       # React entry point
     ├── App.jsx                        # Main App component
@@ -107,13 +107,16 @@ backend/
     │   │   ├── BurndownChart.jsx      # Burndown chart
     │   │   ├── VelocityChart.jsx      # Velocity chart
     │   │   └── Analytics.jsx          # Analytics dashboard
-    │   ├── Common/ (❌ missing - create)
-    │   │   ├── Loading.jsx            # Loading spinner
-    │   │   ├── Modal.jsx              # Modal dialog
-    │   │   ├── SearchBar.jsx          # Search component (❌ missing - create)
-    │   │   ├── Button.jsx             # Reusable button
-    │   │   ├── Input.jsx              # Reusable input
-    │   │   └── Select.jsx             # Reusable select
+    │   ├── Users/
+    │       └── Users.jsx              # Users
+    │   ├── Common/ 
+    │   │   ├── Loading.jsx            # Loading spinner (❌ missing - create)
+    │   │   ├── Modal.jsx              # Modal dialog (❌ missing - create)
+    │   │   ├── SearchBar.jsx          # Search component 
+    │   │   ├── SearchBar.css          # Search component 
+    │   │   ├── Button.jsx             # Reusable button (❌ missing - create)
+    │   │   ├── Input.jsx              # Reusable input (❌ missing - create)
+    │   │   └── Select.jsx             # Reusable select (❌ missing - create)
     │   └── Notifications/
     │       └── NotificationToast.jsx  # Notification toast (❌ missing - create)
     ├── hooks/

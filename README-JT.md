@@ -73,6 +73,8 @@ backend/
     │   │   ├── Header.jsx             # Page header
     │   │   ├── Sidebar.jsx            # Navigation sidebar
     │   │   └── ThemeToggle.jsx        # Dark/light theme toggle (❌ missing - create)
+	│   ├── comments/
+    │   │   └── Comments.jsx           # Commenting
     │   ├── Auth/
     │   │   ├── Login.jsx              # Login form
     │   │   └── Register.jsx           # Registration form

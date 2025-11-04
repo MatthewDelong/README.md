@@ -1,6 +1,7 @@
 # Jira-Tracker
 A comprehensive Jira-like issue tracker and project management website using SQLite
 ---
+---
 ## 🖥 Screenshots  
 
 | Page      | Preview |
@@ -174,3 +175,59 @@ backend/
 ### Default Login ###
 - 👤 Admin: admin@jira.com / admin123
 - 👤 Admin: user@jira.com / user123
+---
+## Deployment ##
+### Deploy to Netlify ###
+- Go to app.netlify.com dashboard
+
+- Site settings → Build & deploy
+
+- Set build settings:
+
+- Base directory: frontend
+
+- Build command: npm run build
+
+- Publish directory: frontend/dist
+
+- Environment variables:
+```
+VITE_API_URL = https://jira-tracker-backend-w2t5.onrender.com
+```
+---
+
+### Deploy to Render.com (Backend) ###
+- Go to Render.com dashboard
+
+- Click "New +" → "Web Service"
+
+- Connect your GitHub repository
+
+- Configure Web Service:
+
+- Build Settings:
+
+- Name: jira-tracker-backend
+
+- Environment: Node
+
+- Region: Choose closest to you
+
+- Branch: main (or your production branch)
+
+- Root Directory: backend
+
+- Build Command: chmod +x render-build.sh && ./render-build.sh
+
+- Start Command: npm start
+
+- Environment Variables (in Render dashboard):
+
+```
+NODE_ENV=production
+JWT_SECRET=your-secure-jwt-secret-key-here
+DB_PATH=./database/jira.db
+CLIENT_URL=https://jira-tracker.netlify.app
+```
+---
+

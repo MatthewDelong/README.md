@@ -51,12 +51,14 @@ backend/
 ├── package.json                       # Frontend dependencies
 ├── vite.config.js                     # Vite configuration
 ├── postcss.config.js  
-├── vtailwind.config.js  
+├── tailwind.config.js  
 ├── index.html                         # Main HTML file
+├── netlify.toml                       # Configuration file that specifies how Netlify builds and deploy
 ├── .env                               # Frontend environment variables
+├── .env.production                    # Frontend production environment variables
 ├── public/
 │   ├── favicon.ico                    # Icon
-│ 	├── favicon-32x32.png              # Icon
+│   ├── favicon-32x32.png              # Icon
 │	└── apple-touch-icon.png           # Icon
 └── src/
     ├── main.jsx                       # React entry point
@@ -107,10 +109,10 @@ backend/
     │   ├── Reports/
     │   │   ├── Reports.jsx            # Reports dashboard
     │   │   ├── BurndownChart.jsx      # Burndown chart
-    │   │   ├── VelocityChart.jsx      # Velocity chart
+    │   │   ├── VelocityChart.jsx      # Velocity charta
     │   │   └── Analytics.jsx          # Analytics dashboard
     │   ├── Users/
-    │       └── Users.jsx              # Users
+    │   │   └── Users.jsx              # Users
     │   ├── Common/ 
     │   │   ├── Loading.jsx            # Loading spinner (❌ missing - create)
     │   │   ├── Modal.jsx              # Modal dialog (❌ missing - create)

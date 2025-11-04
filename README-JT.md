@@ -6,6 +6,7 @@ A comprehensive Jira-like issue tracker and project management website using SQL
 ```
 backend/
 ├── server.js                          # Main server file (you already have this)
+├── render-build.sh                    # Render Build Script
 ├── package.json                       # Backend dependencies
 ├── .env                               # Environment variables
 ├── models/
@@ -20,15 +21,15 @@ backend/
 │   ├── issues.js                      # Issue management routes
 │   ├── users.js                       # User management routes
 │   ├── sprints.js                     # Sprint management routes
-│   ├── comments.js                    # Comment routes (❌ Not working)
+│   ├── comments.js                    
 │   ├── attachments.js                 # File attachment routes (❌ Not working)
 │   ├── reports.js                     # Reporting routes
 │   ├── workflow.js                    # Workflow routes
-│   └── search.js                      # Search routes (❌ missing - create)
+│   └── search.js
 ├── middleware/
 │   ├── auth.js                        # Authentication middleware
 │   ├── upload.js                      # File upload middleware
-│   ├── validation.js                  # Input validation middleware (❌ missing - create)
+│   ├── validation.js
 │   └── errorHandler.js                # Error handling middleware
 ├── config/
 │   ├── database.js                    # Database configuration
@@ -54,7 +55,9 @@ backend/
 ├── index.html                         # Main HTML file
 ├── .env                               # Frontend environment variables
 ├── public/
-│   └── vite.svg                       # Logo/favicon (❌ missing)
+│   ├── favicon.ico                    # Icon
+│ 	 ├── favicon-32x32.png             # Icon
+│	 └── apple-touch-icon.png          # Icon
 └── src/
     ├── main.jsx                       # React entry point
     ├── App.jsx                        # Main App component
@@ -130,15 +133,27 @@ backend/
 ---
 ### Backend: ###
 - cd backend
-- npm install
+- npm install  (installs package.json node_modules)
 - npm run init-db
 - npm run dev
 
 ### Frontend: ###
 - cd frontend
-- npm install
+- npm install (installs package.json node_modules)
 - npm run dev
 
-### Login ###
+### Production for Netlify ###
+- cd frontend
+- npm run build
+
+### Updating Database ###
+- cd backend
+- npm run init-db
+
+### Frontend and Backend ###
+- Frontend hosted on Netlify https://app.netlify.com/
+- Backend hosted on Render https://render.com/
+
+### Default Login ###
 - 👤 Admin: admin@jira.com / admin123
-- 👤 User:  user@jira.com / user123
+- 👤 Admin: user@jira.com / user123

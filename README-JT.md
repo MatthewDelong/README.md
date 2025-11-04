@@ -9,7 +9,7 @@ A comprehensive Jira-like issue tracker and project management website using SQL
 | Dashboard      | ![Dashboard](https://github.com/user-attachments/assets/c56499a7-b651-48ae-a14f-76bedd278e38) |
 | Projects   | ![Projects](https://github.com/user-attachments/assets/ad686dcb-d22f-47ea-af00-a0b62698d9a7)|
 | Issues   | ![Issues](https://github.com/user-attachments/assets/1007d1c7-c6d7-4860-ad21-5097b9c5dfbe) |
-| Weather   | ![Reports](https://github.com/user-attachments/assets/10ca6c31-7f70-446f-aade-36538bda0988) |
+| Reports   | ![Reports](https://github.com/user-attachments/assets/10ca6c31-7f70-446f-aade-36538bda0988) |
 
 
 ## Backend ##
@@ -230,4 +230,5 @@ DB_PATH=./database/jira.db
 CLIENT_URL=https://jira-tracker.netlify.app
 ```
 ---
+
 

@@ -19,7 +19,7 @@ A comprehensive Jira-like issue tracker and project management website using SQL
 ```
 backend/
 ├── server.js                          # Main server file
-├── backup-db.jd                       # database backup/restore system 
+├── backup-db.js                       # database backup/restore system 
 ├── render-build.sh                    # Render Build Script
 ├── package.json                       # Backend dependencies
 ├── .env                               # Environment variables
@@ -238,5 +238,6 @@ DB_PATH=./database/jira.db
 CLIENT_URL=https://jira-tracker.netlify.app
 ```
 ---
+
 
 

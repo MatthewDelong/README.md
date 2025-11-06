@@ -17,143 +17,101 @@ A comprehensive Jira-like issue tracker and project management website using SQL
 ## Backend ##
 
 ```
-backend/
-├── server.js                          # Main server file
-├── backup-db.js                       # database backup/restore system 
-├── render-build.sh                    # Render Build Script
-├── package.json                       # Backend dependencies
-├── .env                               # Environment variables
-├── models/
-│   ├── User.js                        # User model
-│   ├── Project.js                     # Project model
-│   ├── Issue.js                       # Issue model
-│   ├── Sprint.js                      # Sprint model
-│   └── Workflow.js                    # Workflow model
-├── routes/
-│   ├── auth.js                        # Authentication routes
-│   ├── projects.js                    # Project management routes
-│   ├── issues.js                      # Issue management routes
-│   ├── users.js                       # User management routes
-│   ├── sprints.js                     # Sprint management routes
-│   ├── comments.js                    
-│   ├── attachments.js                 # File attachment routes (❌ Not working)
-│   ├── reports.js                     # Reporting routes
-│   ├── workflow.js                    # Workflow routes
-│   └── search.js
-├── middleware/
-│   ├── auth.js                        # Authentication middleware
-│   ├── upload.js                      # File upload middleware
-│   ├── validation.js
-│   └── errorHandler.js                # Error handling middleware
-├── config/
-│   ├── database.js                    # Database configuration
-│   └── email.js                       # Email configuration (❌ Not working)
-├── database/
-│   ├── init.js                        # Database initialization
-│   └── jira.db                        # SQLite database file
-├── uploads/
-│   ├── attachments/                   # Store uploaded attachments (❌ missing - create folder)
-│   └── avatars/                       # Store user avatars (❌ missing - create folder)
-└── utils/
-    ├── helpers.js                     # Utility functions
-    └── notifications.js               # Notification utilities (❌ Not working)
-```
----
-## Frontend ##
-```
-    frontend/
-├── package.json                       # Frontend dependencies
-├── vite.config.js                     # Vite configuration
-├── postcss.config.js  
-├── tailwind.config.js  
-├── index.html                         # Main HTML file
-├── netlift.toml                       # Configuration file that specifies how Netlify builds and deploy
-├── .env                               # Frontend environment variables
-├── .env.production                    # Frontend production environment variables
-├── public/
-│   ├── favicon.ico                    # Icon
-│   ├── favicon-32x32.png              # Icon
-│	└── apple-touch-icon.png           # Icon
-└── src/
-    ├── main.jsx                       # React entry point
-    ├── App.jsx                        # Main App component
-    ├── index.css                      # Global styles
-    ├── contexts/
-    │   ├── AuthContext.jsx            # Authentication context
-    │   ├── SocketContext.jsx          # Socket.io context (❌ missing - create)
-    │   ├── ThemeContext.jsx           # Theme context (❌ missing - create)
-    │   └── NotificationContext.jsx    # Notification context (❌ missing - create)
-    ├── components/
-    ├── Settings/
-    │   │   └── Settings.jsx             # Main Settings
-    ├── Layout/
-    │   ├── Layout/
-    │   │   ├── Layout.jsx             # Main layout component
-    │   │   ├── Header.jsx             # Page header
-    │   │   ├── Sidebar.jsx            # Navigation sidebar
-    │   │   └── ThemeToggle.jsx        # Dark/light theme toggle (❌ missing - create)
-	│   ├── comments/
-    │   │   └── Comments.jsx           # Commenting
-    │   ├── Auth/
-    │   │   ├── Login.jsx              # Login form
-    │   │   └── Register.jsx           # Registration form
-    │   ├── Dashboard/
-    │   │   └── Dashboard.jsx          # Dashboard component
-    │   ├── Projects/
-    │   │   ├── Projects.jsx           # Projects list
-    │   │   ├── ProjectDetail.jsx      # Project details
-    │   │   ├── ProjectCard.jsx        # Project card component
-    │   │   ├── ProjectSettings.jsx    # Project Settings
-    │   │   ├── CreateProject.jsx      # Create project form
-    │   │   └── ProjectMembers.jsx     # Project members management
-    │   ├── Issues/
-    │   │   ├── Issues.jsx             # Issues list
-    │   │   ├── IssueDetail.jsx        # Issue details
-    │   │   ├── IssueCard.jsx          # Issue card component
-    │   │   ├── CreateIssue.jsx        # Create issue form
-    │   │   ├── IssueFilters.jsx       # Issue filtering
-    │   │   └── IssueView.jsx          # Issue view (kanban/list) (❌ missing - create)
-    │   ├── Sprints/
-    │   │   ├── Sprints.jsx            # Sprints list
-    │   │   ├── SprintBoard.jsx        # Sprint board (kanban)
-    │   │   ├── CreateSprint.jsx       # Create sprint form
-    │   │   └── SprintBacklog.jsx      # Sprint backlog (❌ missing - create)
-    │   ├── Workflow/ (❌ missing - create)
-    │   │   ├── WorkflowManagement.jsx # Workflow management
-    │   │   ├── StatusManager.jsx      # Status management
-    │   │   ├── IssueTypeManager.jsx   # Issue type management
-    │   │   ├── WorkflowSchemeManager.jsx # Workflow scheme management
-    │   │   └── TransitionManager.jsx  # Transition management
-    │   ├── Reports/
-    │   │   ├── Reports.jsx            # Reports dashboard
-    │   │   ├── BurndownChart.jsx      # Burndown chart
-    │   │   ├── VelocityChart.jsx      # Velocity charta
-    │   │   └── Analytics.jsx          # Analytics dashboard
-    │   ├── Users/
-    │   │   └── Users.jsx              # Users
-    │   ├── Common/ 
-    │   │   ├── Loading.jsx            # Loading spinner (❌ missing - create)
-    │   │   ├── Modal.jsx              # Modal dialog (❌ missing - create)
-    │   │   ├── SearchBar.jsx          # Search component 
-    │   │   ├── SearchBar.css          # Search component 
-    │   │   ├── Button.jsx             # Reusable button (❌ missing - create)
-    │   │   ├── Input.jsx              # Reusable input (❌ missing - create)
-    │   │   └── Select.jsx             # Reusable select (❌ missing - create)
-    │   └── Notifications/
-    │       └── NotificationToast.jsx  # Notification toast (❌ missing - create)
-    ├── hooks/
-    │   ├── useAuth.js                 # Authentication hook (❌ missing - create)
-    │   ├── useSocket.js               # Socket.io hook (❌ missing - create)
-    │   ├── useLocalStorage.js         # Local storage hook
-    │   ├── useApi.js                  # API call hook
-    │   └── useDebounce.js             # Debounce hook
-    ├── services/
-    │   ├── api.js                     # API service functions
-    │   └── socket.js                  # Socket service (❌ missing - create)
-    └── utils/
-        ├── constants.js               # App constants
-        ├── helpers.js                 # Utility functions
-        └── formatters.js              # Data formatting functions (❌ missing - create)
+frontend/
+├── package.json							# Frontend dependencies & build scripts
+├── vite.config.js							# Vite build tool configuration
+├── postcss.config.js						# PostCSS processing config
+├── tailwind.config.js						# Tailwind CSS customization
+├── index.html								# Application entry HTML
+├── netlify.toml							# Netlify deployment configuration
+├── .env									# Development environment variables
+├── .env.production							# Production environment variables
+├── 📁 public/								# Static assets
+│   ├── favicon.ico							# Site favicon
+│   ├── favicon-32x32.png					# Standard favicon size
+│   └── apple-touch-icon.png				# iOS home screen icon
+└── 📁 src/
+    ├── main.jsx							# React application entry point
+    ├── App.jsx								# Root application component
+    ├── index.css							# Global styles & CSS imports
+    ├── 📁 config/							# Application configuration
+    │   └── firebase.js						# Firebase client configuration
+    ├── 📁 contexts/						# React context providers
+    │   ├── AuthContext.jsx					# Authentication state management
+    │   ├── SocketContext.jsx				# WebSocket connections (⚠️ Create)
+    │   ├── ThemeContext.jsx				# Light/dark theme management (⚠️ Create)
+    │   └── NotificationContext.jsx			# Notification state (⚠️ Create)
+    ├── 📁 components/						# React components organized by feature
+    │   ├── 📁 auth/						# Authentication components
+    │   │   ├── Login.jsx					# Login form component
+    │   │   └── Register.jsx				# Registration form component
+    │   ├── 📁 common/						# Reusable UI components
+    │   │   ├── Loading.jsx					# Loading spinner (⚠️ Create)
+    │   │   ├── Modal.jsx					# Modal dialog component (⚠️ Create)
+    │   │   ├── AvatarUpload.jsx			# Avatar upload component
+    │   │   ├── SearchBar.jsx				# Search input with styling
+    │   │   ├── SearchBar.css				# Search bar specific styles
+    │   │   ├── Button.jsx					# Reusable button (⚠️ Create)
+    │   │   ├── Input.jsx					# Reusable input field (⚠️ Create)
+    │   │   └── Select.jsx					# Reusable select dropdown (⚠️ Create)
+    │   ├── 📁 dashboard/					# Dashboard features
+    │   │   └── Dashboard.jsx				# Main dashboard component
+    │   ├── 📁 issues/						# Issue management
+    │   │   ├── Issues.jsx					# Issues list view
+    │   │   ├── IssueDetail.jsx				# Single issue detail view
+    │   │   ├── IssueCard.jsx				# Issue card for lists
+    │   │   ├── CreateIssue.jsx				# Issue creation form
+    │   │   ├── IssueFilters.jsx			# Filtering and sorting
+    │   │   └── IssueView.jsx				# View toggle (kanban/list) (⚠️ Create)
+    │   ├── 📁 layout/						# Application layout
+    │   │   ├── Layout.jsx					# Main layout wrapper
+    │   │   ├── Header.jsx					# Top navigation header
+    │   │   ├── Sidebar.jsx					# Navigation sidebar
+    │   │   └── ThemeToggle.jsx				# Theme switcher (⚠️ Create)
+    │   ├── 📁 projects/					# Project management
+    │   │   ├── Projects.jsx				# Projects list view
+    │   │   ├── ProjectDetail.jsx			# Project detail page
+    │   │   ├── ProjectCard.jsx				# Project card component
+    │   │   ├── ProjectSettings.jsx			# Project configuration
+    │   │   ├── CreateProject.jsx			# Project creation form
+    │   │   └── ProjectMembers.jsx			# Team member management
+    │   ├── 📁 reports/						# Analytics & reporting
+    │   │   ├── Reports.jsx					# Reports dashboard
+    │   │   ├── BurndownChart.jsx			# Sprint burndown visualization
+    │   │   ├── VelocityChart.jsx			# Team velocity tracking
+    │   │   └── Analytics.jsx				# Advanced analytics
+    │   ├── 📁 settings/					# User & app settings
+    │   │   └── Settings.jsx				# Settings management
+    │   ├── 📁 sprints/						# Sprint planning
+    │   │   ├── Sprints.jsx					# Sprints overview
+    │   │   ├── SprintBoard.jsx				# Kanban board view
+    │   │   ├── CreateSprint.jsx			# Sprint creation
+    │   │   └── SprintBacklog.jsx			# Backlog management (⚠️ Create)
+    │   ├── 📁 users/						# User management
+    │   │   └── Users.jsx					# User list and profiles
+    │   ├── 📁 workflow/					# Workflow configuration (⚠️ Create)
+    │   │   ├── WorkflowManagement.jsx		# Workflow editor
+    │   │   ├── StatusManager.jsx			# Status management
+    │   │   ├── IssueTypeManager.jsx		# Issue type configuration
+    │   │   ├── WorkflowSchemeManager.jsx	# Scheme management
+    │   │   └── TransitionManager.jsx		# State transitions
+    │   ├── 📁 comments/					# Comment system
+    │   │   └── Comments.jsx				# Comment threading
+    │   └── 📁 notifications/				# Notification system
+    │       └── NotificationToast.jsx		# Toast notifications (⚠️ Create)
+    ├── 📁 hooks/							# Custom React hooks
+    │   ├── useAuth.js						# Authentication hook (⚠️ Create)
+    │   ├── useSocket.js					# WebSocket hook (⚠️ Create)
+    │   ├── useLocalStorage.js				# Local storage persistence
+    │   ├── useApi.js						# API call abstraction
+    │   └── useDebounce.js					# Debounced input handling
+    ├── 📁 services/						# External service integrations
+    │   ├── api.js							# REST API client
+    │   └── socket.js						# WebSocket service (⚠️ Create)
+    └── 📁 utils/							# Utility functions
+        ├── constants.js					# Application constants
+        ├── helpers.js						# Common utility functions
+        └── formatters.js					# Data formatting (⚠️ Create)
 ```
 ---
 ### Backend: ###
@@ -236,8 +194,8 @@ NODE_ENV=production
 JWT_SECRET=7ece0cf59177a4922b54aba50699e61bc084117ec1632bce457c14a92e4db138
 DB_PATH=./database/jira.db
 CLIENT_URL=https://jira-tracker.netlify.app
+
 ```
 ---
-
 
 

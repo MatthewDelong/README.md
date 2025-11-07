@@ -1,5 +1,5 @@
 # Jira-Tracker 07/11/2025
-A comprehensive Jira-like issue tracker and project management website using SQLite
+A comprehensive Jira-tracker and project management website
 ---
 ---
 ## 🖥 Screenshots  
@@ -144,6 +144,7 @@ frontend/
 - Publish directory: frontend/dist
 
 ---
+
 
 
 

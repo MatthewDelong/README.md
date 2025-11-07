@@ -1,4 +1,4 @@
-# Jira-Tracker 05/11/2025
+# Jira-Tracker 07/11/2025
 A comprehensive Jira-like issue tracker and project management website using SQLite
 ---
 ---
@@ -6,15 +6,14 @@ A comprehensive Jira-like issue tracker and project management website using SQL
 
 | Page      | Preview |
 |-----------|---------|
-| Dashboard      | ![Dashboard](https://github.com/user-attachments/assets/6273e013-48d1-4912-97d9-19b538eb850f) |
-| Projects   | ![Projects](https://github.com/user-attachments/assets/1af2986d-1405-4836-ad09-f413c0a4a728) |
-| Issues   | ![Issues](https://github.com/user-attachments/assets/71fbdab5-6320-4c91-b50d-ce4a82176337) |
-| Issues Page   | ![Issue_Page](https://github.com/user-attachments/assets/447c0130-14b9-410e-8d2d-cba3f63cc50d) |
-| Reports   | ![Reports](https://github.com/user-attachments/assets/06bcac83-8242-431a-879a-8398e4969cfe) |
-| Settings   | ![Settings](https://github.com/user-attachments/assets/5b9c9235-dc88-4e12-a886-dab6f39ac274) |
+| Dashboard      | ![Dashboard](https://github.com/user-attachments/assets/13f3a877-3c2f-4d1a-9494-783690d1e84f) |
+| Projects   | ![Projects](https://github.com/user-attachments/assets/80116275-a33f-402f-a0dc-a4572634e60b) |
+| Issues   | ![Issues](https://github.com/user-attachments/assets/fbd9605e-5716-4292-a128-a96c473df149) |
+| Issues Page   |![Issue_Card](https://github.com/user-attachments/assets/928cfebf-ae8d-4472-90f7-d0d9662f4ab1)  |
+| Reports   | ![Reports](https://github.com/user-attachments/assets/7e4c7463-0951-4c0d-980f-afbf12fb2e7d) |
+| Settings   | ![Settings](https://github.com/user-attachments/assets/3b86a018-de2b-4bb8-a9a2-108b7dca1a37) |
 
 ---
-## Backend ##
 
 ```
 frontend/
@@ -27,6 +26,7 @@ frontend/
 ├── .env									# Development environment variables
 ├── .env.production							# Production environment variables
 ├── 📁 public/								# Static assets
+│   ├── logo.png							# Logo banner
 │   ├── favicon.ico							# Site favicon
 │   ├── favicon-32x32.png					# Standard favicon size
 │   └── apple-touch-icon.png				# iOS home screen icon
@@ -39,21 +39,21 @@ frontend/
     ├── 📁 contexts/						# React context providers
     │   ├── AuthContext.jsx					# Authentication state management
     │   ├── SocketContext.jsx				# WebSocket connections (⚠️ Create)
-    │   ├── ThemeContext.jsx				# Light/dark theme management (⚠️ Create)
-    │   └── NotificationContext.jsx			# Notification state (⚠️ Create)
+    │   ├── ThemeContext.jsx				# Light/dark theme management
+    │   └── NotificationContext.jsx			# Notification state
     ├── 📁 components/						# React components organized by feature
     │   ├── 📁 auth/						# Authentication components
     │   │   ├── Login.jsx					# Login form component
     │   │   └── Register.jsx				# Registration form component
     │   ├── 📁 common/						# Reusable UI components
-    │   │   ├── Loading.jsx					# Loading spinner (⚠️ Create)
-    │   │   ├── Modal.jsx					# Modal dialog component (⚠️ Create)
+    │   │   ├── Loading.jsx					# Loading spinner
+    │   │   ├── Modal.jsx					# Modal dialog component
     │   │   ├── AvatarUpload.jsx			# Avatar upload component
-    │   │   ├── SearchBar.jsx				# Search input with styling
-    │   │   ├── SearchBar.css				# Search bar specific styles
-    │   │   ├── Button.jsx					# Reusable button (⚠️ Create)
-    │   │   ├── Input.jsx					# Reusable input field (⚠️ Create)
-    │   │   └── Select.jsx					# Reusable select dropdown (⚠️ Create)
+    │   │   ├── SearchBar.jsx				# Search input with styling  (⚠️ Create)
+    │   │   ├── SearchBar.css				# Search bar specific styles  (⚠️ Create)
+    │   │   ├── Button.jsx					# Reusable button
+    │   │   ├── Input.jsx					# Reusable input field 
+    │   │   └── Select.jsx					# Reusable select dropdown
     │   ├── 📁 dashboard/					# Dashboard features
     │   │   └── Dashboard.jsx				# Main dashboard component
     │   ├── 📁 issues/						# Issue management
@@ -62,12 +62,12 @@ frontend/
     │   │   ├── IssueCard.jsx				# Issue card for lists
     │   │   ├── CreateIssue.jsx				# Issue creation form
     │   │   ├── IssueFilters.jsx			# Filtering and sorting
-    │   │   └── IssueView.jsx				# View toggle (kanban/list) (⚠️ Create)
+    │   │   └── IssueView.jsx				# View toggle (kanban/list)
     │   ├── 📁 layout/						# Application layout
     │   │   ├── Layout.jsx					# Main layout wrapper
     │   │   ├── Header.jsx					# Top navigation header
     │   │   ├── Sidebar.jsx					# Navigation sidebar
-    │   │   └── ThemeToggle.jsx				# Theme switcher (⚠️ Create)
+    │   │   └── ThemeToggle.jsx				# Theme switcher
     │   ├── 📁 projects/					# Project management
     │   │   ├── Projects.jsx				# Projects list view
     │   │   ├── ProjectDetail.jsx			# Project detail page
@@ -86,10 +86,10 @@ frontend/
     │   │   ├── Sprints.jsx					# Sprints overview
     │   │   ├── SprintBoard.jsx				# Kanban board view
     │   │   ├── CreateSprint.jsx			# Sprint creation
-    │   │   └── SprintBacklog.jsx			# Backlog management (⚠️ Create)
+    │   │   └── SprintBacklog.jsx			# Backlog management
     │   ├── 📁 users/						# User management
     │   │   └── Users.jsx					# User list and profiles
-    │   ├── 📁 workflow/					# Workflow configuration (⚠️ Create)
+    │   ├── 📁 workflow/					# Workflow configuration 
     │   │   ├── WorkflowManagement.jsx		# Workflow editor
     │   │   ├── StatusManager.jsx			# Status management
     │   │   ├── IssueTypeManager.jsx		# Issue type configuration
@@ -98,27 +98,22 @@ frontend/
     │   ├── 📁 comments/					# Comment system
     │   │   └── Comments.jsx				# Comment threading
     │   └── 📁 notifications/				# Notification system
-    │       └── NotificationToast.jsx		# Toast notifications (⚠️ Create)
+    │       └── NotificationToast.jsx		# Toast notifications
     ├── 📁 hooks/							# Custom React hooks
-    │   ├── useAuth.js						# Authentication hook (⚠️ Create)
+    │   ├── useAuth.js						# Authentication hook 
     │   ├── useSocket.js					# WebSocket hook (⚠️ Create)
     │   ├── useLocalStorage.js				# Local storage persistence
-    │   ├── useApi.js						# API call abstraction
-    │   └── useDebounce.js					# Debounced input handling
+    │   ├── useApi.js						# API call abstraction (⚠️ Create)
+    │   └── useDebounce.js					# Debounced input handling (⚠️ Create)
     ├── 📁 services/						# External service integrations
     │   ├── api.js							# REST API client
     │   └── socket.js						# WebSocket service (⚠️ Create)
     └── 📁 utils/							# Utility functions
         ├── constants.js					# Application constants
         ├── helpers.js						# Common utility functions
-        └── formatters.js					# Data formatting (⚠️ Create)
+        └── formatters.js					# Data formatting
 ```
 ---
-### Backend: ###
-- cd backend
-- npm install  (installs package.json node_modules)
-- npm run init-db
-- npm run dev
 
 ### Frontend: ###
 - cd frontend
@@ -129,17 +124,9 @@ frontend/
 - cd frontend
 - npm run build
 
-### Updating Database ###
-- cd backend
-- npm run init-db
-
 ### Frontend and Backend ###
 - Frontend hosted on Netlify https://app.netlify.com/
-- Backend hosted on Render https://render.com/
-
-### Default Login ###
-- 👤 Admin: admin@jira.com / admin123
-- 👤 Admin: user@jira.com / user123
+- Backend hosted on Firebase
 ---
 
 ## Deployment ##
@@ -156,44 +143,40 @@ frontend/
 
 - Publish directory: frontend/dist
 
-- Environment variables:
-```
-VITE_API_URL = https://jira-tracker-backend-w2t5.onrender.com/api
-```
 ---
 
-### Deploy to Render.com (Backend) ###
-- Go to Render.com dashboard
-
-- Click "New +" → "Web Service"
-
-- Connect your GitHub repository
-
-- Configure Web Service:
-
-- Build Settings:
-
-- Name: jira-tracker-backend
-
-- Environment: Node
-
-- Region: Choose closest to you
-
-- Branch: main (or your production branch)
-
-- Root Directory: backend
-
-- Build Command: chmod +x render-build.sh && ./render-build.sh
-
-- Start Command: npm start
-
-- Environment Variables (in Render dashboard):
-
 ```
-NODE_ENV=production
-JWT_SECRET=7ece0cf59177a4922b54aba50699e61bc084117ec1632bce457c14a92e4db138
-DB_PATH=./database/jira.db
-CLIENT_URL=https://jira-tracker.netlify.app
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBxOvm4kYzzTNsYHE1qzwmLuPtFL5Z4xEY",
+  authDomain: "jira-tracker-68ac8.firebaseapp.com",
+  projectId: "jira-tracker-68ac8",
+  storageBucket: "jira-tracker-68ac8.firebasestorage.app",
+  messagingSenderId: "966222397325",
+  appId: "1:966222397325:web:e003f1f2f184b7358587c4",
+  measurementId: "G-4LXKCDT7KV"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+.env
+VITE_FIREBASE_API_KEY=AIzaSyBxOvm4kYzzTNsYHE1qzwmLuPtFL5Z4xEY
+VITE_FIREBASE_AUTH_DOMAIN=jira-tracker-68ac8.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=jira-tracker-68ac8
+VITE_FIREBASE_STORAGE_BUCKET="jira-tracker-68ac8.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID966222397325
+VITE_FIREBASE_APP_ID=1:966222397325:web:e003f1f2f184b7358587c4
+VITE_APP_NAME=Jira Tracker
 
 ```
 ---

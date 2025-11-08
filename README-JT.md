@@ -144,40 +144,7 @@ frontend/
 
 ---
 
-```
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBxOvm4kYzzTNsYHE1qzwmLuPtFL5Z4xEY",
-  authDomain: "jira-tracker-68ac8.firebaseapp.com",
-  projectId: "jira-tracker-68ac8",
-  storageBucket: "jira-tracker-68ac8.firebasestorage.app",
-  messagingSenderId: "966222397325",
-  appId: "1:966222397325:web:e003f1f2f184b7358587c4",
-  measurementId: "G-4LXKCDT7KV"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-
-.env
-VITE_FIREBASE_API_KEY=AIzaSyBxOvm4kYzzTNsYHE1qzwmLuPtFL5Z4xEY
-VITE_FIREBASE_AUTH_DOMAIN=jira-tracker-68ac8.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=jira-tracker-68ac8
-VITE_FIREBASE_STORAGE_BUCKET="jira-tracker-68ac8.firebasestorage.app
-VITE_FIREBASE_MESSAGING_SENDER_ID966222397325
-VITE_FIREBASE_APP_ID=1:966222397325:web:e003f1f2f184b7358587c4
-VITE_APP_NAME=Jira Tracker
-
-```
 ---
 
 
@@ -208,3 +175,4 @@ Your Jira Tracker application is now **complete and ready for deployment**! Here
 - Netlify configuration complete
 - Build scripts ready
 - Security rules implemented
+
